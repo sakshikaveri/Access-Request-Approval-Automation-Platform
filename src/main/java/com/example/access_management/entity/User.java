@@ -6,17 +6,21 @@ import jakarta.persistence.*;
 @Table(name = "users")
 public class User {
 
+    @Column(nullable = false)
     private String name;
 
+    @Column(nullable = false)
     private String role; // EMPLOYEE, MANAGER, ADMIN
 
-    @Column(unique = true)
+    @Column(nullable = false, unique = true)
     private String email;
 
+    @Column(nullable = false)
     private String password;
 
     private boolean active;
 
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
