@@ -1,17 +1,16 @@
 package com.example.access_management.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "users")
 public class User {
 
     private String name;
 
     private String role; // EMPLOYEE, MANAGER, ADMIN
 
-
+    @Column(unique = true)
     private String email;
 
     private String password;
