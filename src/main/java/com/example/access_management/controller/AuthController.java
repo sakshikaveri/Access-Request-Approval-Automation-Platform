@@ -33,7 +33,7 @@ public class AuthController {
         user.setName(request.getName());
         user.setEmail(request.getEmail());
         user.setPassword(passwordEncoder.encode(request.getPassword())); // encode password
-        user.setRole(request.getRole());
+        user.setRole("ROLE_USER");
 
         userRepository.save(user);
 
