@@ -24,4 +24,4 @@ jobs:
         run: chmod +x mvnw
 
       - name: Build with Maven
-        run: ./mvnw clean test
+        run: ./mvnw clean test -Dspring.profiles.active=test
