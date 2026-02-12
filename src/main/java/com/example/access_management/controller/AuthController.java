@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/auth")
+
 public class AuthController {
 
     private final PasswordEncoder passwordEncoder;
@@ -54,8 +55,5 @@ public class AuthController {
         return ResponseEntity.ok("Login successful");
     }
 
-    @GetMapping("/")  // Maps to http://yourapp.railway.app/
-    public String home() {
-        return "Access Management API - use /api/auth/login";
-    }
+
 }
