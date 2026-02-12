@@ -1,6 +1,9 @@
 # Access-Request-Approval-Automation-Platform
-The Access Request Approval Automation Platform streamlines access request workflows such as VPN, database, and tool access approvals. 
-It replaces manual email-based processes with a secure, auditable system that logs every action and reduces approval time.
+The **Access Request Approval Automation Platform** is a backend-only Spring Boot application that automates access request approvals, such as VPN, database, and tool access.  
+It replaces manual email-based workflows with a **secure, auditable, and API-driven system**.
+
+> ⚠️ **Note:** This project does **not include a frontend**. Interact with the APIs using **Postman, curl, or any API client**.
+
 
 ## Tech Stack
 - **Backend:** Spring Boot, Java
